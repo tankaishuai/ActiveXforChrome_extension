@@ -1,0 +1,29 @@
+body  {
+  background: -webkit-gradient(
+  linear, left top, left bottom, from(#feefae), to(#fee692));
+  margin: 0;
+  margin-top: 1px;
+  margin-left: 5px;
+  border-bottom-width: 1px;
+  overflow: hidden;
+}
+
+span {
+  word-break:keep-all;
+  white-space:nowrap;
+  overflow: hidden;
+}
+button {
+  background: -webkit-gradient(
+  linear, left top, left bottom, from(#fffbe9), to(#fcedb2));
+  height: 28px;
+  margin: 2px 3px;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #978d60;
+}
+
+button:hover {
+  border-color: #4b4630;
+}
+

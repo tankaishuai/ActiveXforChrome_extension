@@ -1,0 +1,56 @@
+body {
+  background-color: #ffd;
+}
+
+body > div {
+  margin: 10px;
+  max-width: 1000px;
+}
+
+#tbSetting {
+  width: 1000px;
+  height: 500px;
+}
+
+.itemline.newline:not(.editing) {
+  display:none;
+}
+
+div[property=status] {
+  width: 75px
+}
+div[property=title] {
+  width: 200px
+}
+div[property=type] {
+  width: 60px
+}
+div[property=value] {
+  width: 320px
+}
+div[property=userAgent] {
+  width: 80px
+}
+
+div[property=script] {
+  width: 350px
+}
+
+[property=status] button {
+  width: 70px;
+}
+
+#ruleCmds button {
+  width: 100px;
+  margin: 4px 8px 3px 8px;
+}
+
+#share {
+  float:left;
+  padding: 5px 0 0 40px;
+  height: 100px;
+}
+
+#footer * {
+  margin: 0 10px;
+}

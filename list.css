@@ -1,0 +1,118 @@
+.list {
+  width: 800px;
+  height: 400px;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  border: 3px solid #0D5995;
+  background-color: #0D5995;
+  padding: 1px;
+  padding-top: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.listscroll {
+  overflow-x: scroll;
+  overflow-y: scroll;
+  background-color: white;
+}
+
+.listitems {
+  display: inline-block;
+}
+
+.listvalue, .header {
+  display: inline-block;
+  width: 80px;
+  margin: 0px 6px;
+}
+
+.headers {
+  background-color: transparent;
+  position: relative;
+  white-space: nowrap;
+  display: inline-block;
+  color:white;
+  padding: 5px 0px;
+}
+
+.header{
+  white-space: normal;
+}
+
+.itemline {
+  height: 32px;
+}
+
+.itemline:nth-child(odd) {
+  background-color: white;
+}
+
+.itemline:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+.itemline.selected {
+  background-color: #aaa;
+}
+
+.itemline:hover {
+  background-color: #bbcee9
+}
+
+.itemline.error,
+.itemline.error:hover {
+  background-color: salmon;
+}
+
+.itemline > div {
+  white-space: nowrap;
+  padding: 4px 0px 0 0;
+}
+
+.itemline.editing > div{
+  padding: 3px 0px 0 0;
+}
+
+
+.valdisp, .valinput {
+  background-color: transparent;
+  width: 100%;
+  display: block;
+}
+
+.listvalue {
+  overflow-x: hidden;
+}
+
+.itemline.editing .listvalue:not(.readonly) .valdisp {
+  display: none;
+}
+
+.valdisp {
+  font-size: 13px;
+}
+
+.itemline:not(.editing) .valinput,
+.listvalue.readonly .valinput {
+  display: none;
+}
+
+.itemline :focus {
+  outline: none;
+}
+
+.valinput {
+  border:1px solid #aaa;
+  background-color: white;
+  padding: 3px;
+  margin: 0;
+}
+
+.itemline .valinput:focus {
+  outline-color: rgba(0, 128, 256, 0.5);
+  outline: 5px auto rgba(0, 128, 256, 0.5);
+}
+

@@ -1,2 +1,1 @@
-# ActiveXforChrome_extension
-ActiveXforChrome_extension
+ActiveX for Chrome 网银助手插件，是一款支持Chrome中使用网银、播放器、OA等ActiveX控件的扩展程序，可以在不使用IETab等IE控件的情况下使Chrome能够部分支持ActiveX控件。

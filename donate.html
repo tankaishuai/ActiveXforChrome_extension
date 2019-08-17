@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+      body {
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CCF), color-stop(0.4, white), to(white)) no-repeat
+      }
+      #main {
+        margin: auto;
+        width: 600px;
+      }
+      #main > * {
+        clear: both;
+        margin: 30px;
+      }
+      #header {
+        text-align: center;
+        font-size: 30px;
+      }
+      #hint {
+        font-size: 20px;
+        border-color: red;
+        border-width: 2px;
+        border-style: dashed;
+        padding: 10px;
+      }
+    </style>
+    <script src="jquery.js"></script>
+    <script src="i18n.js"></script>
+    <script src="gas.js"></script>
+    <script src="donate.js"></script>
+    <title i18n="donate"></title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">ActiveX for Chrome -- <span i18n="donate"></span></div>
+      <div i18n="donate_label"></div>
+      <div id="paymentoptions">
+        <form name="_xclick" target="_blank" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="qiuc12@gmail.com">
+          <input type="hidden" name="item_name" value="ActiveX for Chrome">
+          <input type="hidden" name="item_number" value="npax">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="notify_url" value="http://eagleonhill.oicp.net/editor/paypal.php">
+          <input type="hidden" name="charset" value="utf-8">
+          <input type="hidden" name="amount" value="">
+          <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+        </form>
+        <a target="_blank" href="http://item.taobao.com/item.htm?id=18229698749" i18n="taobao_donate"></a>
+      </div>
+      <div><a target="_blank" href="http://code.google.com/p/np-activex/wiki/Donations" i18n="donate_record"></a></div>
+      <div></div>
+      <div i18n="donate_share">
+      </div>
+      <script src="share.js"></script>
+      <div></div>
+      <div id="hint" style="display:none">
+        <a id="hintonfirst" href="options.html" i18n="donate_gotooptions"></a>
+      </div>
+    </div>
+  </body>
+</html>

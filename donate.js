@@ -1,0 +1,1 @@
+chrome.extension.getBackgroundPage().firstRun&&(document.getElementById("hint").style.display="",chrome.extension.getBackgroundPage().firstRun=!1);$(document).ready(function(){$("#share").load("share.html")});

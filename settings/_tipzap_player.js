@@ -1,0 +1,1 @@
+window.addEventListener('load', function() {Exobud.URL = objMmInfo[0].mmUrl}, false);

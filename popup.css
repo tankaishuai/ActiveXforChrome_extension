@@ -1,0 +1,44 @@
+body {
+  background-color: #ffd;
+}
+
+.main {
+  width: 500px;
+  height: 340px;
+  padding: 10px;
+}
+
+.status {
+  font-size: 18px;
+  margin: 0 20px;
+}
+
+#issue_view {
+  margin: 15px 10px;
+}
+
+#issue_view > div {
+  margin: 7px 0px;
+}
+
+#share {
+  position: absolute;
+  top: 250px;
+  left: 30px;
+  height: 90px;
+}
+
+button {
+  width: 350px;
+  height: 30px;
+  margin: 4px;
+}
+
+button.defaultRule {
+  background-color: #0A0;
+}
+
+button.customRule {
+  background-color: #aaf;
+}
+

@@ -1,0 +1,1 @@
+navigator.cpuClass='x86';

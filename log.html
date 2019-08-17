@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title i18n="view_log"></title>
+    <script src="jquery.js"></script>
+    <script src="gas.js"></script>
+    <script src="i18n.js"></script>
+    <script src="log.js"></script>
+    <style>
+      #text {
+        width: 800px;
+        height: 500px;
+      }
+      div {
+        margin: 10px 0px;
+      }
+      body > div {
+        float:left;
+      }
+      #logs_items {
+        margin-top: 40px;
+        margin-right: 20px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 300px;
+        height: 500px;
+        white-space: nowrap;
+        border-width: 1px;
+        border-style: solid;
+      }
+      ul.selected {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="left">
+      <div id="logs_items">
+      </div>
+    </div>
+    <div id="logs_show">
+      <div i18n="log">
+      </div>
+      <textarea id="text" wrap="off">
+      </textarea>
+      <div>
+        <input id="tracking" type="checkbox"></input>
+        <label for="tracking" i18n="log_tracking"></label>
+      </div>
+      <div>
+        <input id="beforeSubmit" type="checkbox"></input>
+        <label for="beforeSubmit" i18n="issue_submit_desp"></label>
+        <a id="submitLink" i18n="issue_submit_goto" style="margin-left:50px;display:none" href="http://code.google.com/p/np-activex/issues/entry?template=Defect%20report%20from%20log" target="_blank"></a>
+      </div>
+    </div>
+  </body>
+</html>

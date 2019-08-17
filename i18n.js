@@ -1,0 +1,1 @@
+var $$=chrome.i18n.getMessage;function loadI18n(){for(var c=document.querySelectorAll("[i18n]"),b=0;b<c.length;++b){var a=c[b];v=$$(a.getAttribute("i18n"));""==v&&(v=a.getAttribute("i18n"));"INPUT"==a.tagName?a.value=v:a.innerText=v}document.removeEventListener("DOMContentLoaded",loadI18n,!1)}document.addEventListener("DOMContentLoaded",loadI18n,!1);
